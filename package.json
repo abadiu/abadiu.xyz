@@ -1,11 +1,28 @@
 {
-  "name": "gatsby-starter-portfolio-cara",
-  "description": "Playful & Colorful One-Page website with Parallax effect powered by react-spring, TailwindCSS.",
-  "version": "3.0.0",
-  "author": "LekoArts <hello@lekoarts.de> (https://www.lekoarts.de)",
+  "name": "abadiu",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://abadiu.xyz",
+  "bugs": {
+    "url": "https://github.com/abadiu/abadiu/issues",
+    "email": "adrian@abadiu.xyz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abadiu/abadiu.git"
+  },
   "license": "MIT",
+  "scripts": {
+    "dev": "gatsby develop -o",
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "lint": "eslint . --ext .js,.jsx --ignore-path .gitignore",
+    "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
+    "lint:ci": "yarn lint --format junit -o results/eslint/result.xml"
+  },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
+    "dotenv": "^7.0.0",
     "gatsby": "^2.1.37",
     "gatsby-image": "^2.0.34",
     "gatsby-plugin-google-analytics": "^2.0.17",
@@ -28,19 +45,6 @@
     "typeface-cantata-one": "^0.0.72",
     "typeface-open-sans": "^0.0.54"
   },
-  "keywords": [
-    "gatsby",
-    "starter",
-    "portfolio"
-  ],
-  "scripts": {
-    "dev": "gatsby develop -o",
-    "develop": "gatsby develop",
-    "build": "gatsby build",
-    "lint": "eslint . --ext .js,.jsx --ignore-path .gitignore",
-    "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
-    "lint:ci": "yarn lint --format junit -o results/eslint/result.xml"
-  },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^5.15.2",
@@ -52,12 +56,10 @@
     "eslint-plugin-react": "^7.12.4",
     "prettier": "^1.16.4"
   },
-  "repository": {
-    "url": "https://github.com/LekoArts/gatsby-starter-portfolio-cara",
-    "type": "git"
-  },
-  "bugs": {
-    "url": "https://github.com/LekoArts/gatsby-starter-portfolio-cara/issues"
-  },
-  "homepage": "https://cara.lekoarts.de"
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

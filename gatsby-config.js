@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 const config = require('./config/website')
 
 const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
@@ -21,7 +25,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: config.googleAnalyticsID,
+        trackingId: process.env.GOOGLE_ANALYTICS_ID,
       },
     },
     'gatsby-transformer-sharp',
