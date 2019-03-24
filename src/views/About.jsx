@@ -20,7 +20,7 @@ const About = ({ children, offset }) => (
       <UpDownWide>
         <SVG icon="arrowUp" hiddenMobile width={16} fill={colors.purple} left="5%" top="80%" />
         <SVG icon="triangle" width={12} stroke={colors.white} left="95%" top="50%" />
-        <SVG icon="circle" width={6} fill={colors.white} left="85%" top="15%" />
+        <SVG icon="circle" width={6} fill={colors['grey-darkest']} left="85%" top="15%" />
         <SVG icon="upDown" hiddenMobile width={8} fill={colors['grey-darkest']} left="45%" top="10%" />
       </UpDownWide>
       <SVG icon="circle" width={6} fill={colors.white} left="4%" top="20%" />
