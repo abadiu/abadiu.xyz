@@ -24,7 +24,7 @@ Start by running:
 
 Then make an archive of the build:
 
-`tar -cvf ./deploy.tar --exclude='*.map' ./captain-definition ./public/`*
+`tar -cvf ./deploy.tar --exclude='*.map' ./captain-definition ./public/*`
 
 Deploy and enjoy!
 
