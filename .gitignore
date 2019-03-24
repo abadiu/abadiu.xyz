@@ -29,3 +29,4 @@ yarn-error.log*
 .cache
 deploy.tar
 deploy.txt
+package-lock.json
