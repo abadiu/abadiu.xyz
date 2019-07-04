@@ -17,7 +17,9 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "lint": "eslint . --ext .js,.jsx --ignore-path .gitignore",
-    "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore"
+    "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
@@ -42,7 +44,8 @@
     "tailwind.macro": "^0.5.10",
     "tailwindcss": "^0.7.4",
     "typeface-cantata-one": "^0.0.72",
-    "typeface-open-sans": "^0.0.54"
+    "typeface-open-sans": "^0.0.54",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
@@ -60,5 +63,6 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "snyk": true
 }
