@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   *, *:before, *:after {
@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: #161719;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: #f8f9fa;
   }
   html, body {
     width: 100%;
@@ -24,6 +25,6 @@ const GlobalStyle = createGlobalStyle`
     color: #e07628;
     text-decoration: none;
   }
-`
+`;
 
-export default GlobalStyle
+export default GlobalStyle;

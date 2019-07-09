@@ -1,0 +1,9 @@
+.post {
+    padding: 5% 20% 5% 20%;
+}
+
+.post-meta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
