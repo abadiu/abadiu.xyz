@@ -24,7 +24,9 @@
     "lint:js": "eslint --fix --ext .js,.jsx --ignore-path .gitignore",
     "lint:css": "stylelint 'src/**/*.js'",
     "check-pretty": "prettier -l {,src/**/}*.{js,jsx,json,css,scss}",
-    "format": "prettier --write \"src/**/*.jsx\""
+    "format": "prettier --write \"src/**/*.jsx\"",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
@@ -66,7 +68,8 @@
     "tailwindcss": "^0.7.4",
     "typeface-cantata-one": "0.0.72",
     "typeface-open-sans": "0.0.54",
-    "url-join": "^4.0.0"
+    "url-join": "^4.0.0",
+    "snyk": "^1.192.4"
   },
   "devDependencies": {
     "cli-glob": "^0.1.0",
@@ -92,5 +95,6 @@
       "not ie <= 11",
       "not op_mini all"
     ]
-  }
+  },
+  "snyk": true
 }
