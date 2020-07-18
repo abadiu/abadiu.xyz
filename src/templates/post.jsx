@@ -3,10 +3,10 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import Layout from '../layout';
-import UserInfo from '../components/UserInfo';
-import PostTags from '../components/PostTags';
-import SocialLinks from '../components/SocialLinks';
-import SEO from '../components/SEO';
+import UserInfo from '../components/UserInfo.jsx';
+import PostTags from '../components/PostTags.jsx';
+// import SocialLinks from '../components/SocialLinks.jsx';
+import SEO from '../components/SEO.jsx';
 import config from '../../data/SiteConfig';
 import './b16-tomorrow-dark.css';
 import './post.css';
@@ -34,7 +34,7 @@ export default class PostTemplate extends React.Component {
             <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
             <div className="post-meta">
               <PostTags tags={post.tags} />
-              <SocialLinks postPath={slug} postNode={postNode} />
+              {/* <SocialLinks postPath={slug} postNode={postNode} /> */}
             </div>
             <UserInfo config={config} />
           </div>
