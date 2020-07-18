@@ -1,11 +1,5 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import styled from 'styled-components';
-import tw from 'tailwind.macro';
-
-const Wrapper = styled.div`
-  ${tw`flex flex-col lg:flex-col items-center mt-12`};
-`;
 
 class PostListing extends React.Component {
   getPostList() {
@@ -26,14 +20,14 @@ class PostListing extends React.Component {
   render() {
     const postList = this.getPostList();
     return (
-      <Wrapper>
+      <div>
         {/* Your post list here. */
         postList.map(post => (
           <Link to={post.path} key={post.title}>
             <h1>{post.title}</h1>
           </Link>
         ))}
-      </Wrapper>
+      </div>
     );
   }
 }

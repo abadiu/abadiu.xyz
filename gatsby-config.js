@@ -2,7 +2,7 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 const urljoin = require("url-join");
-const config = require("./data/SiteConfig");
+const config = require("./src/data/config.js");
 
 module.exports = {
   pathPrefix: config.pathPrefix === "" ? "/" : config.pathPrefix,
@@ -16,32 +16,31 @@ module.exports = {
       image_url: `${urljoin(
         config.siteUrl,
         config.pathPrefix
-      )}/logos/logo-512.png`,
+      )}../src/data/assets/logos/logo-512.png`,
       copyright: config.copyright
     }
   },
   plugins: [
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-lodash",
-    'gatsby-plugin-styled-components',
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "assets",
-        path: `${__dirname}/static/`
+        path: `${__dirname}/src/data/assets/`
       }
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "posts",
-        path: `${__dirname}/content/`
+        path: `${__dirname}/src/data/content/`
       }
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/images/`,
+        path: `${__dirname}/src/data/assets/images/`,
         name: 'images',
       },
     },
@@ -94,12 +93,12 @@ module.exports = {
         display: "minimal-ui",
         icons: [
           {
-            src: "/favicons/android-chrome-192x192.png",
+            src: "../src/data/assets/favicons/android-chrome-192x192.png",
             sizes: "192x192",
             type: "image/png"
           },
           {
-            src: "/favicons/android-chrome-512x512.png",
+            src: "../src/data/assets/favicons/android-chrome-512x512.png",
             sizes: "512x512",
             type: "image/png"
           }

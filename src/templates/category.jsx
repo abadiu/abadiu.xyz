@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import Layout from '../layout';
 import PostListing from '../components/PostListing';
-import config from '../../data/SiteConfig';
+import config from '../data/config';
 
 export default class CategoryTemplate extends React.Component {
   render() {

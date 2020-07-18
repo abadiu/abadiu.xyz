@@ -1,29 +1,22 @@
-/* eslint-disable import/no-unresolved */
 import React from 'react';
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
-import styled from 'styled-components';
-import tw from 'tailwind.macro';
 
-import Layout from '../layout';
-import PostListing from '../components/PostListing';
-import SEO from '../components/SEO';
-import config from '../../data/SiteConfig';
-
-const Wrapper = styled.div`
-  ${tw`p-8 text-lg	flex flex-col items-right mt-8`};
-`;
+import Layout from '../layout/index.jsx';
+import PostListing from '../components/PostListing.jsx';
+import SEO from '../components/SEO.jsx';
+import config from '../data/config';
 
 class Index extends React.Component {
   render() {
     const postEdges = this.props.data.allMarkdownRemark.edges;
     return (
       <Layout>
-        <Wrapper className="index-container">
+        <div className="index-container">
           <Helmet title={config.siteTitle} />
           <SEO />
           <PostListing postEdges={postEdges} />
-        </Wrapper>
+        </div>
       </Layout>
     );
   }

@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import { graphql, StaticQuery } from 'gatsby';
-import config from '../../data/SiteConfig';
+import config from '../data/config';
 
 const Head = props => {
   const {
@@ -39,7 +39,7 @@ const Head = props => {
       '@type': 'Person',
       name: config.author,
     },
-    copyrightYear: '2019',
+    copyrightYear: '2020',
     creator: {
       '@type': 'Person',
       name: config.author,
@@ -48,7 +48,7 @@ const Head = props => {
       '@type': 'Person',
       name: config.author,
     },
-    datePublished: '2019-01-17',
+    datePublished: '2020-01-17',
     dateModified: buildTime,
     image: {
       '@type': 'ImageObject',
