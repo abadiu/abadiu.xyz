@@ -74,14 +74,13 @@ class Index extends React.Component {
         <div className="index-container">
           <Helmet title={config.siteTitle} />
           <SEO />
-          <Parallax pages={5}>
+          <Parallax pages={4}>
             <Hero offset={0}>
               <BigTitle>
-                Hello, <br /> I'm Adrian.
+                Hello, <br /> my name is Adrian.
               </BigTitle>
               <Subtitle>
-                A javascript developer, looking for frontend development roles,
-                in and around Southampton, UK.
+                I'm a javascript developer, based in Southampton, UK, looking for new projects to work on.
               </Subtitle>
               <Wrapper>
                 <Button
@@ -148,7 +147,7 @@ class Index extends React.Component {
                 </ProjectCard>
               </ProjectsWrapper>
             </Projects>
-            <Contact offset={4}>
+            <Contact offset={3}>
               <Inner>
                 <Title>Get in touch</Title>
                 <ContactText>
@@ -159,7 +158,7 @@ class Index extends React.Component {
                 </ContactText>
               </Inner>
               <Footer>
-                &copy; 2019 Source code on{' '}
+                &copy; 2020 Source code on{' '}
                 <a href="https://github.com/abadiu/abadiu">Github</a>. Made by{' '}
                 <a href="https://abadiu.xyz">Adrian Badiu</a>.
               </Footer>
