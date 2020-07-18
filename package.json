@@ -1,6 +1,6 @@
 {
   "name": "abadiu",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "private": true,
   "homepage": "https://abadiu.xyz",
   "bugs": {
@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
-    "gatsby": "^2.17.2",
+    "gatsby": "^2.24.4",
     "gatsby-image": "^2.2.29",
     "gatsby-plugin-catch-links": "^2.1.15",
     "gatsby-plugin-feed": "^2.3.19",
@@ -53,7 +53,7 @@
     "gatsby-source-filesystem": "^2.0.28",
     "gatsby-transformer-remark": "^2.6.30",
     "gatsby-transformer-sharp": "^2.1.17",
-    "lodash": "^4.17.16",
+    "lodash": "^4.17.19",
     "moment": "^2.24.0",
     "prismjs": "^1.15.0",
     "prop-types": "^15.7.2",
@@ -64,13 +64,13 @@
     "react-share": "^2.4.0",
     "react-spring": "^8.0.18",
     "react-twitter-widgets": "^1.7.1",
+    "snyk": "^1.316.1",
     "styled-components": "^4.2.0",
     "tailwind.macro": "^0.5.10",
     "tailwindcss": "^0.7.4",
     "typeface-cantata-one": "0.0.72",
     "typeface-open-sans": "0.0.54",
-    "url-join": "^4.0.0",
-    "snyk": "^1.316.1"
+    "url-join": "^4.0.0"
   },
   "devDependencies": {
     "cli-glob": "^0.1.0",
