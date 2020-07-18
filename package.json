@@ -70,7 +70,7 @@
     "typeface-cantata-one": "0.0.72",
     "typeface-open-sans": "0.0.54",
     "url-join": "^4.0.0",
-    "snyk": "^1.290.1"
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "cli-glob": "^0.1.0",
