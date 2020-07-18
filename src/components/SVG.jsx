@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import tw from 'tailwind.macro';
 import { width as twWidth } from '../../tailwind';
-import { hidden } from '../styles/utils';
+import { hidden } from '../styles/utils.jsx';
 
 const Wrapper = styled.svg`
   ${tw`absolute`};

@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import tw from 'tailwind.macro';
 import styled from 'styled-components';
-import { Divider } from '../elements/Dividers';
-import Content from '../elements/Content';
-import { UpDown, UpDownWide, waveAnimation } from '../styles/animations';
+import { Divider } from '../elements/Dividers.jsx';
+import Content from '../elements/Content.jsx';
+import { UpDown, UpDownWide, waveAnimation } from '../styles/animations.jsx';
 import { colors } from '../../tailwind';
-import SVG from '../components/SVG';
+import SVG from '../components/SVG.jsx';
 
 const WaveWrapper = styled.div`
   ${tw`absolute pin-b w-full`};

@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import tw from 'tailwind.macro';
 import { colors } from '../../tailwind';
-import { Divider } from '../elements/Dividers';
-import Content from '../elements/Content';
-import { UpDown, UpDownWide } from '../styles/animations';
-import SVG from '../components/SVG';
+import { Divider } from '../elements/Dividers.jsx';
+import Content from '../elements/Content.jsx';
+import { UpDown, UpDownWide } from '../styles/animations.jsx';
+import SVG from '../components/SVG.jsx';
 
 const Wrapper = styled.div`
   ${tw`w-full xl:w-2/3`};

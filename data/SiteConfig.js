@@ -2,12 +2,12 @@ const config = {
   siteTitle: "Adrian Badiu | Web Developer", // Site title.
   siteTitleShort: "abadiu", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "Adrian Badiu", // Alternative site title for SEO.
-  siteHeadline: 'Southampton based web developer', // Headline for schema.org JSONLD
+  siteHeadline: 'A web developer based in Southampton, UK', // Headline for schema.org JSONLD
   siteLogo: "/logo.png", // Logo used for SEO and manifest.
   siteUrl: "https://abadiu.xyz", // Domain of your website without pathPrefix.
   siteLanguage: 'enGB', // Language Tag on <html> element
   pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
-  siteDescription: "I am a web developer living in Southampton loooking for new opportunities.", // Website description used for RSS feeds/meta description tag.
+  siteDescription: "I am a web developer living in Southampton loooking for new projects to work on.", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   postDefaultCategoryID: "Update", // Default category for posts.
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
@@ -38,7 +38,7 @@ const config = {
       iconClassName: "fa fa-envelope"
     }
   ],
-  copyright: "Copyright © 2019. Adrian Badiu", // Copyright string for the footer of the website and RSS feed.
+  copyright: "Copyright © 2020. Adrian Badiu", // Copyright string for the footer of the website and RSS feed.
   themeColor: "#c62828", // Used for setting manifest and progress theme colors.
   backgroundColor: "#e0e0e0", // Used for setting manifest background color.
 };
