@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 import SEO from '../components/SEO';
 import SiteMenu from '../components/Menu';
 import config from '../data/config';
+import '../styles/index.sass'
 
 export default class MainLayout extends React.Component {
   render() {
