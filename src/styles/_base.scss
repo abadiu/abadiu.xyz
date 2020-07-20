@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  flex-direction: column;
+
+  header {
+    margin: 0;
+    padding: 0;
+  }
+  footer {
+    padding: 2em;
+    text-align: center;
+  }
+  .ProjectCard {
+    text-decoration: none;
+  }
+  $breakpoint: 60em;
+  @media (min-width: $breakpoint) {
+    .ProjectsWrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .ProjectCard {
+        flex-basis: 50%;
+        padding: 2em;
+      }
+    }
+  }
+  @media (max-width: 60em) {
+    .content {
+      padding: 2em 4em 2em 4em;
+    }
+  }
+  .content {
+    padding: 10% 15% 10% 15%;
+  }
+  .Hero {
+      h1 {
+          font-size: 4em;
+      }
+  }
+  .About {
+      margin-top: 4em;
+  }
+}

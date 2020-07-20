@@ -11,36 +11,37 @@ var styles = {
     top: '36px',
   },
   bmBurgerBars: {
-    background: '#e07628',
+    background: '#000',
   },
   bmBurgerBarsHover: {
     background: '#a90000',
   },
   bmCrossButton: {
-    height: '24px',
-    width: '24px',
+    height: '36px',
+    width: '36px',
   },
   bmCross: {
-    background: '#bdc3c7',
+    background: '#000',
   },
   bmMenuWrap: {
     position: 'fixed',
-    height: '100%',
+
   },
   bmMenu: {
-    background: '#373a47',
+    background: '#fff',
     padding: '2.5em 1.5em 0',
     fontSize: '1.15em',
   },
   bmMorphShape: {
-    fill: '#373a47',
+    fill: '#000',
   },
   bmItemList: {
-    color: '#b8b7ad',
+    color: '#000',
     padding: '0.8em',
   },
   bmItem: {
     padding: '1em',
+    color: 'black',
   },
   bmOverlay: {
     background: 'rgba(0, 0, 0, 0.3)',
