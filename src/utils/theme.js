@@ -73,6 +73,7 @@ const theme = {
     h6: {
       fontStyle: 'italic'
     },
+    // eslint-disable-next-line
     a: {
       boxShadow: '0 1px 0 0 currentColor',
       color: '#66D9EF',
