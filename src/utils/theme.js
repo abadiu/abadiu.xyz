@@ -1,8 +1,7 @@
-import gray from 'gray-percentage';
 import { MOBILE_MEDIA_QUERY } from 'typography-breakpoint-constants';
 const theme = {
   title: 'Midnight Coder',
-  baseFontSize: '18px',
+  baseFontSize: '20px',
   baseLineHeight: 1.75,
   scaleRatio: 5 / 2,
   googleFonts: [{
@@ -16,7 +15,7 @@ const theme = {
   bodyFontFamily: ['Source Sans Pro', 'sans-serif'],
   bodyColor: 'hsla(0,0%,0%,0.9)',
   headerWeight: 900,
-  bodyWeight: 300,
+  bodyWeight: 400,
   boldWeight: 700,
   overrideStyles: ({
     scale,
