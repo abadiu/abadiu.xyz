@@ -6,26 +6,7 @@ import config from '../data/config';
 
 import Layout from '../layout/index.jsx';
 import ProjectCard from '../components/ProjectCard.jsx';
-import { AwesomeButton } from 'react-awesome-button';
-import AwesomeButtonStyles from "react-awesome-button/src/styles/styles.scss";
-// import Hero from 'react-delaunay-hero';
-
-function Button(props) {
-  return (
-    <AwesomeButton
-      size='large'
-      type='primary'
-      disabled={false}
-      href='mailto:adrian@abadiu.xyz'
-      target='_blank'
-      action='clicked'
-      ripple
-      cssModule={AwesomeButtonStyles}
-    >
-      Get in touch
-    </AwesomeButton>         
-  );
-}
+import Button from '../components/Button.jsx'
 
 // import avatar from '../images/avatar.jpg';
 class Index extends React.Component {
@@ -60,7 +41,11 @@ class Index extends React.Component {
                   A Web Developer, based in Southampton, looking
                   for new projects to work on.<br/> Let's work together!
                 </h2>
-              <Button className="cta_Button" />
+              <Button 
+              className="aws-btn"
+              label="Get in touch"
+              link="mailto:adrian@abadiu.xyz"
+              />
               </div>
             {/* </Hero> */}
           </header>
