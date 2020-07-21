@@ -25,7 +25,6 @@ var styles = {
   },
   bmMenuWrap: {
     position: 'fixed',
-
   },
   bmMenu: {
     background: '#fff',

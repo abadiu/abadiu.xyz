@@ -6,7 +6,7 @@ import config from '../data/config';
 
 import Layout from '../layout/index.jsx';
 import ProjectCard from '../components/ProjectCard.jsx';
-import Button from '../components/Button.jsx'
+import Button from '../components/Button.jsx';
 
 // import avatar from '../images/avatar.jpg';
 class Index extends React.Component {
@@ -17,7 +17,7 @@ class Index extends React.Component {
           <Helmet title={config.siteTitle} />
           <SEO />
           <header>
-    {/*         <Hero
+            {/*         <Hero
               width="100%"
               height="80vh"
               color="#ffa900"
@@ -33,20 +33,21 @@ class Index extends React.Component {
               distribute="quasirandom"
               animate
             > */}
-              <div className="Hero">
-                <h1>
-                  Hello, <br /> I'm Adrian.
-                </h1>
-                <h2>
-                  A Web Developer, based in Southampton, looking
-                  for new projects to work on.<br/> Let's work together!
-                </h2>
-              <Button 
-              className="aws-btn"
-              label="Get in touch"
-              link="mailto:adrian@abadiu.xyz"
+            <div className="Hero">
+              <h1>
+                Hello, <br /> I'm Adrian.
+              </h1>
+              <h2>
+                A Web Developer, based in Southampton, looking for new projects
+                to work on.
+                <br /> Let's work together!
+              </h2>
+              <Button
+                className="aws-btn"
+                label="Get in touch"
+                link="mailto:adrian@abadiu.xyz"
               />
-              </div>
+            </div>
             {/* </Hero> */}
           </header>
           <div className="About">

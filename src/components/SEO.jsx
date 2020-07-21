@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { graphql, StaticQuery } from 'gatsby';
 import config from '../data/config';
 
-const Head = props => {
+const Head = (props) => {
   const {
     data: {
       site: { buildTime },
@@ -135,10 +135,10 @@ Head.propTypes = {
   }).isRequired,
 };
 
-const SEO = props => (
+const SEO = (props) => (
   <StaticQuery
     query={querySEO}
-    render={data => <Head {...props} data={data} />}
+    render={(data) => <Head {...props} data={data} />}
   />
 );
 
