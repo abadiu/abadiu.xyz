@@ -1,4 +1,4 @@
-# abadiu
+# abadiu.xyz
 
 This repository hold the source code of my personal website, see it live [here](https://abadiu.xyz). It is heavily based on the [Cara - Gatsby Starter Portfolio](https://cara.lekoarts.de/) `Gatsby.js` starter made by [LekoArts](https://www.lekoarts.de/).
 
