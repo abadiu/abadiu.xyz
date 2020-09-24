@@ -1,53 +1,85 @@
 require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
+    path: `.env.${process.env.NODE_ENV}`,
 })
-const urljoin = require("url-join");
-const config = require("./src/data/config.js");
+const urljoin = require('url-join')
+const config = require('./src/data/config.js')
 
 module.exports = {
-  pathPrefix: config.pathPrefix === "" ? "/" : config.pathPrefix,
-  siteMetadata: {
-    siteUrl: urljoin(config.siteUrl, config.pathPrefix),
-    rssMetadata: {
-      site_url: urljoin(config.siteUrl, config.pathPrefix),
-      feed_url: urljoin(config.siteUrl, config.pathPrefix, config.siteRss),
-      title: config.siteTitle,
-      description: config.siteDescription,
-      image_url: `${urljoin(
-        config.siteUrl,
-        config.pathPrefix
-      )}../src/data/assets/logos/logo-512.png`,
-      copyright: config.copyright
-    }
-  },
-  plugins: [
-    "gatsby-plugin-react-helmet",
-    `gatsby-plugin-postcss`,
-    "gatsby-plugin-lodash",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "assets",
-        path: `${__dirname}/src/data/assets/`
-      }
+    pathPrefix: config.pathPrefix === '' ? '/' : config.pathPrefix,
+    siteMetadata: {
+        siteUrl: urljoin(config.siteUrl, config.pathPrefix),
+        rssMetadata: {
+            site_url: urljoin(config.siteUrl, config.pathPrefix),
+            feed_url: urljoin(
+                config.siteUrl,
+                config.pathPrefix,
+                config.siteRss
+            ),
+            title: config.siteTitle,
+            description: config.siteDescription,
+            image_url: `${urljoin(
+                config.siteUrl,
+                config.pathPrefix
+            )}../src/data/assets/logos/logo-512.png`,
+            copyright: config.copyright,
+        },
     },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "posts",
-        path: `${__dirname}/src/data/content/`
-      }
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/data/assets/images/`,
-        name: 'images',
-      },
-    },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
-    {
+    plugins: [
+        'gatsby-plugin-react-helmet',
+        `gatsby-plugin-postcss`,
+        'gatsby-plugin-lodash',
+
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                name: 'assets',
+                path: `${__dirname}/src/data/assets/`,
+            },
+        },
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                name: 'posts',
+                path: `${__dirname}/src/data/content/`,
+            },
+        },
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                path: `${__dirname}/src/data/assets/images/`,
+                name: 'images',
+            },
+        },
+        'gatsby-transformer-sharp',
+        'gatsby-plugin-sharp',
+        {
+            resolve: `gatsby-plugin-mdx`,
+            options: {
+                extensions: ['.mdx', '.md'],
+                gatsbyRemarkPlugins: [
+                    {
+                        resolve: `gatsby-remark-images`,
+                        options: {
+                            maxWidth: 590,
+                        },
+                    },
+                    {
+                        resolve: `gatsby-remark-responsive-iframe`,
+                        options: {
+                            wrapperStyle: `margin-bottom: 1.0725rem`,
+                        },
+                    },
+                    {
+                        resolve: `gatsby-remark-copy-linked-files`,
+                    },
+                    {
+                        resolve: `gatsby-remark-autolink-headers`,
+                    },
+                ],
+                plugins: [`gatsby-remark-images`],
+            },
+        },
+        /* {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
@@ -65,49 +97,51 @@ module.exports = {
           "gatsby-remark-autolink-headers"
         ]
       }
-    },
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID
-      }
-    },
-    {
-      resolve: "gatsby-plugin-nprogress",
-      options: {
-        color: config.themeColor
-      }
-    },
-    "gatsby-plugin-sharp",
-    "gatsby-plugin-catch-links",
-    "gatsby-plugin-twitter",
-    "gatsby-plugin-sitemap",
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        name: config.siteTitle,
-        short_name: config.siteTitleShort,
-        description: config.siteDescription,
-        start_url: config.pathPrefix,
-        background_color: config.backgroundColor,
-        theme_color: config.themeColor,
-        display: "minimal-ui",
-        icons: [
-          {
-            src: "../src/data/assets/favicons/android-chrome-192x192.png",
-            sizes: "192x192",
-            type: "image/png"
-          },
-          {
-            src: "../src/data/assets/favicons/android-chrome-512x512.png",
-            sizes: "512x512",
-            type: "image/png"
-          }
-        ]
-      }
-    },
-    "gatsby-plugin-offline",
-  /*   {
+    }, */
+        {
+            resolve: 'gatsby-plugin-google-analytics',
+            options: {
+                trackingId: process.env.GOOGLE_ANALYTICS_ID,
+            },
+        },
+        {
+            resolve: 'gatsby-plugin-nprogress',
+            options: {
+                color: config.themeColor,
+            },
+        },
+        'gatsby-plugin-sharp',
+        'gatsby-plugin-catch-links',
+        'gatsby-plugin-twitter',
+        'gatsby-plugin-sitemap',
+        {
+            resolve: 'gatsby-plugin-manifest',
+            options: {
+                name: config.siteTitle,
+                short_name: config.siteTitleShort,
+                description: config.siteDescription,
+                start_url: config.pathPrefix,
+                background_color: config.backgroundColor,
+                theme_color: config.themeColor,
+                display: 'minimal-ui',
+                icons: [
+                    {
+                        src:
+                            '../src/data/assets/favicons/android-chrome-192x192.png',
+                        sizes: '192x192',
+                        type: 'image/png',
+                    },
+                    {
+                        src:
+                            '../src/data/assets/favicons/android-chrome-512x512.png',
+                        sizes: '512x512',
+                        type: 'image/png',
+                    },
+                ],
+            },
+        },
+        'gatsby-plugin-offline',
+        /*   {
       resolve: "gatsby-plugin-feed",
       options: {
         setup(ref) {
@@ -181,5 +215,5 @@ module.exports = {
         ]
       }
     } */
-  ]
-};
+    ],
+}
