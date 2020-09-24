@@ -50,11 +50,9 @@ var styles = {
 let pageList = [
   {id: 0, url: "/", label: "Home"},
   {id: 1, url: "/about", label: "About"},
-  {id: 2, url: "/skills", label: "Skills"},
-  {id: 3, url: "/projects", label: "Projects"},
-  {id: 4, url: "/coding-cahallanges", label: "Coding Challanges"},
-  {id: 5, url: "/contact", label: "Contact"},
-  {id: 6, url: "/blog", label: "Blog"}
+  {id: 2, url: "/projects", label: "Projects"},
+  {id: 4, url: "/contact", label: "Contact"},
+  {id: 5, url: "/blog", label: "Blog"}
 ];       
 
 let pageListItems = pageList.map((pageList) =>
@@ -66,7 +64,7 @@ let pageListItems = pageList.map((pageList) =>
 const SiteMenu = () => {
   return (
     // eslint-disable-next-line no-unused-expressions
-    <Menu styles={styles} left>
+    <Menu styles={styles} right>
       <ul>
       {pageListItems}
       </ul>

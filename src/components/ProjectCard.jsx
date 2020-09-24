@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+const card = `bg-gray-700 text-gray-100 p-5`
+
 const ProjectCard = ({ title, link, children, bg }) => (
-  <a
-    className="ProjectCard"
+  <div className={card}>
+    <a
     href={link}
     target="_blank"
     rel="noopener noreferrer"
@@ -12,6 +14,7 @@ const ProjectCard = ({ title, link, children, bg }) => (
     <h4>{title}</h4>
     <p>{children}</p>
   </a>
+  </div>
 );
 
 export default ProjectCard;

@@ -24,7 +24,7 @@ export default class PostTemplate extends React.Component {
     }
     return (
       <Layout>
-        <div className="post">
+        <article className="p-20 prose lg:prose-xl">
           <Helmet>
             <title>{`${post.title} | ${config.siteTitle}`}</title>
           </Helmet>
@@ -39,7 +39,7 @@ export default class PostTemplate extends React.Component {
             </div>
             <UserInfo config={config} />
           </div>
-        </div>
+        </article>
       </Layout>
     );
   }

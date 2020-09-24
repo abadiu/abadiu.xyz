@@ -7,7 +7,7 @@ let year = moment().year();
 class Footer extends Component {
   render() {
     return (
-      <footer>
+      <footer className="p-20">
         <p>
           &copy; {year} Source code on{' '}
           <a href="https://github.com/abadiu/abadiu">Github</a>.<br /> Made by{' '}

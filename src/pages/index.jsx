@@ -13,15 +13,15 @@ class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <div className="index-container">
+        <div className="container">
           <Helmet title={config.siteTitle} />
           <SEO />
-          <header>
-            <div className="Hero">
-              <h1>
+          <header className="p-20">
+            <div className="font-serif">
+              <h1 className="text-6xl">
                 Hello, <br /> I'm Adrian
               </h1>
-              <h2>
+              <h2 className="text-3xl">
                 A Web Developer, based in Southampton, looking for new projects
                 to work on.
                 <br /> Let's work together!
@@ -33,8 +33,8 @@ class Index extends React.Component {
               />
             </div>
           </header>
-          <div className="About">
-            <h3>About me</h3>
+          <div className="p-20">
+            <h3 className="text-2xl">About me</h3>
             <div className="Wrapper">
               {/* <img src={avatar} alt="Adrian Badiu" /> */}
               <h5>
@@ -56,9 +56,9 @@ class Index extends React.Component {
               </p>
             </div>
           </div>
-          <div className="Projects">
-            <h3>Projects</h3>
-            <div className="ProjectsWrapper">
+          <div className="p-20">
+            <h3 className="text-2xl">Projects</h3>
+            <div className="flex-nowrap">
               <ProjectCard
                 title="Ottimo"
                 link="https:/ottimo.site"
@@ -93,9 +93,9 @@ class Index extends React.Component {
               </ProjectCard>
             </div>
           </div>
-          <div className="Contact">
+          <div className="p-20">
             <div className="Wrapper">
-              <h3>Get in touch</h3>
+              <h3 className="text-2xl">Get in touch</h3>
               <p>
                 Say <a href="mailto:adrian@abadiu.xyz">Hi</a> or find me on
                 other platforms: <a href="https://github.com/abadiu">Github</a>{' '}
