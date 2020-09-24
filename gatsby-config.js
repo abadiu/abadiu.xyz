@@ -66,13 +66,6 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-        omitGoogleFont: true
-      },
-    },
-    {
       resolve: "gatsby-plugin-google-analytics",
       options: {
         trackingId: process.env.GOOGLE_ANALYTICS_ID
@@ -88,7 +81,6 @@ module.exports = {
     "gatsby-plugin-catch-links",
     "gatsby-plugin-twitter",
     "gatsby-plugin-sitemap",
-    `gatsby-plugin-sass`,
     {
       resolve: "gatsby-plugin-manifest",
       options: {

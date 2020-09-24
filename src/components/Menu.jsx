@@ -47,19 +47,29 @@ var styles = {
   },
 };
 
+let pageList = [
+  {id: 0, url: "/", label: "Home"},
+  {id: 1, url: "/about", label: "About"},
+  {id: 2, url: "/skills", label: "Skills"},
+  {id: 3, url: "/projects", label: "Projects"},
+  {id: 4, url: "/coding-cahallanges", label: "Coding Challanges"},
+  {id: 5, url: "/contact", label: "Contact"},
+  {id: 6, url: "/blog", label: "Blog"}
+];       
+
+let pageListItems = pageList.map((pageList) =>
+  <li className="bmItem" key={pageList.id}>
+  <Link to={pageList.url}>{pageList.label}</Link><br/>
+  </li>
+)
+
 const SiteMenu = () => {
   return (
     // eslint-disable-next-line no-unused-expressions
     <Menu styles={styles} left>
-      <li>
-        <Link to="/">Home</Link>
-      </li>
-      <li>
-        <Link to="/blog">Blog</Link>
-      </li>
-      <li>
-        <Link to="/about">About</Link>
-      </li>
+      <ul>
+      {pageListItems}
+      </ul>
     </Menu>
   );
 };

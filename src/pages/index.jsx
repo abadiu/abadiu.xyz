@@ -17,54 +17,40 @@ class Index extends React.Component {
           <Helmet title={config.siteTitle} />
           <SEO />
           <header>
-            {/*         <Hero
-              width="100%"
-              height="80vh"
-              color="#ffa900"
-              backgroundColor="#ffa500"
-              fillColor="gradient_reverse"
-              borderColor={null}
-              maxPoints={200}
-              maxSpeed={0.6}
-              minSpeed={0.5}
-              lineWidth={0.5}
-              lineColor="#ffa200"
-              debug={false}
-              distribute="quasirandom"
-              animate
-            > */}
             <div className="Hero">
               <h1>
-                Hello, <br /> I'm Adrian.
+                Hello, <br /> I'm Adrian
               </h1>
               <h2>
                 A Web Developer, based in Southampton, looking for new projects
                 to work on.
                 <br /> Let's work together!
               </h2>
-              <Button
+              <Button    
                 className="aws-btn"
                 label="Get in touch"
                 link="mailto:adrian@abadiu.xyz"
               />
             </div>
-            {/* </Hero> */}
           </header>
           <div className="About">
-            <h3>About</h3>
+            <h3>About me</h3>
             <div className="Wrapper">
               {/* <img src={avatar} alt="Adrian Badiu" /> */}
               <h5>
-                I am passionate about building products that provide a great
-                user experience, my focus is primarily frontend development, but
-                I know my way around a server.
+                Passionate about building products that provide a great
+                user experience, my focus is primarily building fast, reliable frontends, but
+                I know my way around a server/backend.
               </h5>
               <p>
                 My journey into web development began as a hobby and quickly
-                developed into a passion for software and the web. After more
-                than 4 years working as a freelance developer in my spare time,
+                developed into a long-standing passion for software and the web. 
+                <br/>
+                After more than 4 years working as a freelance developer in my spare time,
                 I'm excited to take the next the next step and work on projects
-                fulltime. Most of my current work revolves around React.js and
+                fulltime.
+                <br/>
+                Most of my current work revolves around React.js and
                 the wider JavaScript ecosystem, to build offline-ready,
                 optimised progressive web apps.
               </p>
