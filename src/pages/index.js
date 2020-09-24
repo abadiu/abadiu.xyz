@@ -1,12 +1,12 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
-import SEO from '../components/SEO.jsx'
+import SEO from '../components/SEO'
 import config from '../data/config'
 
-import Layout from '../layout/index.jsx'
-import ProjectCard from '../components/ProjectCard.jsx'
-import Button from '../components/Button.jsx'
+import Layout from '../layout'
+import ProjectCard from '../components/ProjectCard'
+import Button from '../components/Button'
 
 // import avatar from '../images/avatar.jpg';
 class Index extends React.Component {

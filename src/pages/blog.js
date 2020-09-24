@@ -2,9 +2,9 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 
-import Layout from '../layout/index.jsx'
-import PostListing from '../components/PostListing.jsx'
-import SEO from '../components/SEO.jsx'
+import Layout from '../layout/index.js'
+import PostListing from '../components/PostListing'
+import SEO from '../components/SEO'
 import config from '../data/config'
 
 class Index extends React.Component {

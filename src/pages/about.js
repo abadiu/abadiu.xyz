@@ -2,7 +2,7 @@
 import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../layout'
-import About from '../components/About.jsx'
+import About from '../components/About'
 import config from '../data/config'
 
 class AboutPage extends Component {
