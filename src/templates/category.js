@@ -1,4 +1,3 @@
-/* eslint-disable import/no-unresolved */
 import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
@@ -23,7 +22,6 @@ export default class CategoryTemplate extends React.Component {
     }
 }
 
-/* eslint no-undef: "off" */
 export const pageQuery = graphql`
     query CategoryPage($category: String) {
         allMdx(

@@ -2,7 +2,7 @@ require('dotenv').config({
     path: `.env.${process.env.NODE_ENV}`,
 })
 const urljoin = require('url-join')
-const config = require('./src/data/config.js')
+const config = require('./src/data/config')
 
 module.exports = {
     pathPrefix: config.pathPrefix === '' ? '/' : config.pathPrefix,

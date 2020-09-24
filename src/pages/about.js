@@ -1,4 +1,3 @@
-/* eslint-disable import/no-unresolved */
 import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../layout'

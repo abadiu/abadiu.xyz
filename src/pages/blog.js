@@ -7,7 +7,7 @@ import PostListing from '../components/PostListing'
 import SEO from '../components/SEO'
 import config from '../data/config'
 
-class Index extends React.Component {
+class BlogIndex extends React.Component {
     render() {
         const postEdges = this.props.data.allMarkdownRemark.edges
         return (
@@ -22,9 +22,8 @@ class Index extends React.Component {
     }
 }
 
-export default Index
+export default BlogIndex
 
-/* eslint no-undef: "off" */
 export const pageQuery = graphql`
     query BlogQuery {
         allMdx(limit: 2000, sort: { fields: [fields___date], order: DESC }) {

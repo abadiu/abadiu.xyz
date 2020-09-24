@@ -1,4 +1,3 @@
-/* eslint-disable import/no-unresolved */
 import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
@@ -6,10 +5,10 @@ import Img from 'gatsby-image'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 import Layout from '../layout'
-import UserInfo from '../components/UserInfo.jsx'
-import PostTags from '../components/PostTags.jsx'
+import UserInfo from '../components/UserInfo'
+import PostTags from '../components/PostTags'
 // import SocialLinks from '../components/SocialLinks.jsx';
-import SEO from '../components/SEO.jsx'
+import SEO from '../components/SEO'
 import config from '../data/config'
 
 export default class PostTemplate extends React.Component {
@@ -46,7 +45,6 @@ export default class PostTemplate extends React.Component {
     }
 }
 
-/* eslint no-undef: "off" */
 export const pageQuery = graphql`
     query BlogPostBySlug($slug: String!) {
         mdx(fields: { slug: { eq: $slug } }) {
