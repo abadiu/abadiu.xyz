@@ -3,6 +3,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
+import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 import Layout from '../layout'
 import UserInfo from '../components/UserInfo.jsx'
@@ -32,9 +33,7 @@ export default class PostTemplate extends React.Component {
                     <div>
                         <h1>{post.title}</h1>
                         <Img fixed={post.cover} />
-                        <div
-                            dangerouslySetInnerHTML={{ __html: postNode.html }}
-                        />
+                        <MDXRenderer>{post.body}</MDXRenderer>
                         <div className="post-meta">
                             <PostTags tags={post.tags} />
                             {/* <SocialLinks postPath={slug} postNode={postNode} /> */}
@@ -51,7 +50,8 @@ export default class PostTemplate extends React.Component {
 export const pageQuery = graphql`
     query BlogPostBySlug($slug: String!) {
         mdx(fields: { slug: { eq: $slug } }) {
-            html
+            id
+            body
             excerpt
             frontmatter {
                 title

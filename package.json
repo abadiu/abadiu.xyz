@@ -16,11 +16,11 @@
   "author": "Adrian Badiu <adrian@abadiu.xyz>",
   "main": "n/a",
   "scripts": {
-    "develop": "gatsby develop",
-    "dev": "gatsby develop -o",
-    "serve": "gatsby serve",
-    "build": "gatsby build",
-    "build:pp": "gatsby build --prefix-paths",
+    "develop": "node_modules/.bin/gatsby develop",
+    "dev": "node_modules/.bin/gatsby develop -o",
+    "serve": "node_modules/.bin/gatsby serve",
+    "build": "node_modules/.bin/gatsby build",
+    "build:pp": "node_modules/.bin/gatsby build --prefix-paths",
     "check-pretty": "prettier -l {,src/**/}*.{js,jsx,json,css,scss}",
     "format": "prettier --write \"src/**/*.jsx\""
   },
@@ -39,7 +39,7 @@
     "gatsby-plugin-google-analytics": "^2.3.14",
     "gatsby-plugin-lodash": "^3.3.11",
     "gatsby-plugin-manifest": "^2.4.31",
-    "gatsby-plugin-mdx": "^1.2.41",
+    "gatsby-plugin-mdx": "^1.2.40",
     "gatsby-plugin-nprogress": "^2.3.11",
     "gatsby-plugin-offline": "^3.2.28",
     "gatsby-plugin-postcss": "^2.3.12",
@@ -92,16 +92,5 @@
     "hooks": {
       "pre-commit": "pretty-quick --staged"
     }
-  },
-  "remarkConfig": {
-    "plugins": [
-      "remark-preset-lint-recommended"
-    ],
-    "browserslist": [
-      ">0.2%",
-      "not dead",
-      "not ie <= 11",
-      "not op_mini all"
-    ]
   }
 }
