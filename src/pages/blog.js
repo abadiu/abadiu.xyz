@@ -9,7 +9,7 @@ import config from '../data/config'
 
 class BlogIndex extends React.Component {
     render() {
-        const postEdges = this.props.data.allMarkdownRemark.edges
+        const postEdges = this.props.data.allMdx.edges
         return (
             <Layout>
                 <div className="index-container">

@@ -32,7 +32,7 @@ export default class PostTemplate extends React.Component {
                     <div>
                         <h1>{post.title}</h1>
                         <Img fixed={post.cover} />
-                        <MDXRenderer>{post.body}</MDXRenderer>
+                        <MDXRenderer>{postNode.body}</MDXRenderer>
                         <div className="post-meta">
                             <PostTags tags={post.tags} />
                             {/* <SocialLinks postPath={slug} postNode={postNode} /> */}

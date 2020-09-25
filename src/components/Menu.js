@@ -50,9 +50,8 @@ var styles = {
 let pageList = [
     { id: 0, url: '/', label: 'Home' },
     { id: 1, url: '/about', label: 'About' },
-    { id: 2, url: '/projects', label: 'Projects' },
-    { id: 4, url: '/contact', label: 'Contact' },
-    { id: 5, url: '/blog', label: 'Blog' },
+    { id: 2, url: '/contact', label: 'Contact' },
+    { id: 3, url: '/blog', label: 'Blog' },
 ]
 
 let pageListItems = pageList.map((pageList) => (
