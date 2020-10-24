@@ -16,11 +16,12 @@
   "author": "Adrian Badiu <adrian@abadiu.xyz>",
   "main": "n/a",
   "scripts": {
-    "develop": "node_modules/.bin/gatsby develop",
-    "dev": "node_modules/.bin/gatsby develop -o",
-    "serve": "node_modules/.bin/gatsby serve",
-    "build": "node_modules/.bin/gatsby build",
-    "build:pp": "node_modules/.bin/gatsby build --prefix-paths",
+    "develop": "gatsby develop",
+    "dev": "gatsby develop -o",
+    "serve": "gatsby serve",
+    "build": "gatsby build",
+    "build:pp": "gatsby build --prefix-paths",
+    "start": "npm run serve",
     "check-pretty": "prettier -l {,src/**/}*.{js,jsx,json,css,scss}",
     "format": "prettier --write \"src/**/*.jsx\""
   },
