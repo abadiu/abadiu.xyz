@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 html {
-  scroll-behavior: smooth;
-  --secondary: #a0aec0;
-  --accent: #718096;
+    scroll-behavior: smooth;
+    --secondary: #a0aec0;
+    --accent: #718096;
 }
 
 /* .theme-light {
@@ -23,6 +23,6 @@ html {
 } */
 
 .active::after {
-  opacity: 1 !important;
-  transform: translateY(0) !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
