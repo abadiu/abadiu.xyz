@@ -26,7 +26,6 @@ module.exports = {
     },
     plugins: [
         'gatsby-plugin-react-helmet',
-        `gatsby-plugin-postcss`,
         'gatsby-plugin-lodash',
 
         {
@@ -129,14 +128,12 @@ module.exports = {
                 display: 'minimal-ui',
                 icons: [
                     {
-                        src:
-                            '../src/data/assets/favicons/android-chrome-192x192.png',
+                        src: '../src/data/assets/favicons/android-chrome-192x192.png',
                         sizes: '192x192',
                         type: 'image/png',
                     },
                     {
-                        src:
-                            '../src/data/assets/favicons/android-chrome-512x512.png',
+                        src: '../src/data/assets/favicons/android-chrome-512x512.png',
                         sizes: '512x512',
                         type: 'image/png',
                     },

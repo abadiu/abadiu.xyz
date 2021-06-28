@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
-import SEO from '../components/SEO'
+import Seo from '../components/Seo'
 import config from '../data/config'
 
 import Layout from '../layout'
@@ -15,7 +15,7 @@ class Index extends React.Component {
             <Layout>
                 <div className="container">
                     <Helmet title={config.siteTitle} />
-                    <SEO />
+                    <Seo />
                     <header className="p-20">
                         <div className="font-serif">
                             <h1 className="text-6xl">

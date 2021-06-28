@@ -47,7 +47,7 @@ const config = {
 // Validate
 
 // Make sure pathPrefix is empty if not needed
-if (config.pathPrefix === '/') {
+/* if (config.pathPrefix === '/') {
     config.pathPrefix = ''
 } else {
     // Make sure pathPrefix only contains the first forward slash
@@ -60,6 +60,6 @@ if (config.siteUrl.substr(-1) === '/')
 
 // Make sure siteRss has a starting forward slash
 if (config.siteRss && config.siteRss[0] !== '/')
-    config.siteRss = `/${config.siteRss}`
+    config.siteRss = `/${config.siteRss}` */
 
 module.exports = config

@@ -8,7 +8,7 @@ import Layout from '../layout'
 import UserInfo from '../components/UserInfo'
 import PostTags from '../components/PostTags'
 // import SocialLinks from '../components/SocialLinks.jsx';
-import SEO from '../components/SEO'
+import Seo from '../components/Seo'
 import config from '../data/config'
 
 export default class PostTemplate extends React.Component {
@@ -28,7 +28,7 @@ export default class PostTemplate extends React.Component {
                     <Helmet>
                         <title>{`${post.title} | ${config.siteTitle}`}</title>
                     </Helmet>
-                    <SEO postPath={slug} postNode={postNode} postSEO />
+                    <Seo postPath={slug} postNode={postNode} postSEO />
                     <div>
                         <h1>{post.title}</h1>
                         <Img fixed={post.cover} />

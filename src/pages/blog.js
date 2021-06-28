@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 
 import Layout from '../layout/index.js'
 import PostListing from '../components/PostListing'
-import SEO from '../components/SEO'
+import Seo from '../components/Seo'
 import config from '../data/config'
 
 class BlogIndex extends React.Component {
@@ -14,7 +14,7 @@ class BlogIndex extends React.Component {
             <Layout>
                 <div className="index-container">
                     <Helmet title={config.siteTitle} />
-                    <SEO />
+                    <Seo />
                     <PostListing postEdges={postEdges} />
                 </div>
             </Layout>

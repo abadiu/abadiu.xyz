@@ -146,17 +146,17 @@ Head.propTypes = {
     }).isRequired,
 }
 
-const SEO = (props) => (
+const Seo = (props) => (
     <StaticQuery
         query={querySEO}
         render={(data) => <Head {...props} data={data} />}
     />
 )
 
-export default SEO
+export default Seo
 
 const querySEO = graphql`
-    query SEO {
+    query Seo {
         site {
             buildTime(formatString: "YYYY-MM-DD")
         }
