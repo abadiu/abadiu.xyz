@@ -148,7 +148,7 @@ Head.propTypes = {
 
 const Seo = (props) => (
     <StaticQuery
-        query={querySEO}
+        query={querySeo}
         render={(data) => <Head {...props} data={data} />}
     />
 )
