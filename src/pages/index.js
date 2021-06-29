@@ -13,7 +13,7 @@ class Index extends React.Component {
     render() {
         return (
             <Layout>
-                <div className="container">
+                <div className="container p-5">
                     <Helmet title={config.siteTitle} />
                     <Seo />
                     <header className="p-20">
