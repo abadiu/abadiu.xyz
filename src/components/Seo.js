@@ -155,7 +155,7 @@ const Seo = (props) => (
 
 export default Seo
 
-const querySEO = graphql`
+const querySeo = graphql`
     query Seo {
         site {
             buildTime(formatString: "YYYY-MM-DD")
