@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const card = `bg-gray-700 text-gray-100 p-5`
+const card = `p-5`
 
 const ProjectCard = ({ title, link, children, bg }) => (
     <div className={card}>
